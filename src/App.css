@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.custom-home-page {
+  /* font-family: 'Helvetica Neue', sans-serif; */
+  font-family: "Secular One", sans-serif;
+
+  color: #333;
+  /* background-color: #7c69e6; */
+  /* background-color: #d6b2b2; */
+  /* background-color: #58aaed; */
+  /* background: linear-gradient(45deg, #ff5858, #e48ca5, #aa00ff); */
+  background: linear-gradient(45deg, #aa00ff,#ff5858, #e48ca5 );
+direction: rtl;}

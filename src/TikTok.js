@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 // import logo from './flashtokimage.webp';
 import logo from './android-chrome-192x192.png';
+import Terms from './Terms';
 
 // SEO Component
 const SEOMetaTags = () => {
@@ -846,8 +848,8 @@ const TikTokPromotionPage = () => {
                         <div>
                             <h3 style={styles.footerTitle}>מידע נוסף</h3>
                             <div style={styles.footerLinks}>
-                                <a href="#" style={styles.footerLink}>תנאי שימוש</a>
-                                <a href="#" style={styles.footerLink}>מדיניות פרטיות</a>
+                            <Link to="/terms" style={styles.footerLink}>תנאי שימוש</Link>
+                            <Link to="/privacy" style={styles.footerLink}>מדיניות פרטיות</Link>
                                 <a href="#" style={styles.footerLink}>שאלות נפוצות</a>
                             </div>
                         </div>
