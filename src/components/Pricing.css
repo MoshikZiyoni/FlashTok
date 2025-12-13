@@ -1,0 +1,137 @@
+.pricing-section {
+    padding: 100px 0;
+    background-color: #080808;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.pricing-header p {
+    color: var(--text-secondary);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.pricing-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+    position: relative;
+    text-align: right;
+    /* RTL Alignment */
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--neon-green);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-card.recommended {
+    border: 1px solid var(--neon-green);
+    background: linear-gradient(145deg, rgba(0, 255, 136, 0.05), #0f0f0f);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--neon-green);
+    color: black;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.pricing-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+    flex-direction: row-reverse;
+    /* Put currency symbol on correct side for Hebrew? Or keep standard layout */
+    justify-content: flex-end;
+    /* Align right */
+}
+
+.currency {
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-left: 4px;
+    /* Adjust spacing */
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.features li {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.features li::before {
+    content: "✓";
+    color: var(--neon-green);
+    margin-left: 12px;
+    /* RTL spacing */
+    font-weight: bold;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 100%;
+}
+
+.btn-outline:hover {
+    border-color: white;
+    background: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.pricing-card .btn-primary {
+    width: 100%;
+}

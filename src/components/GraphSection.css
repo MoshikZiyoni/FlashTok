@@ -1,0 +1,149 @@
+.graph-section {
+    padding: 100px 0;
+    background-color: var(--dark-bg);
+}
+
+.graph-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.graph-header h2 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.graph-header p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.graph-card {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+    direction: rtl;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    /* Important for containing annotations */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(0, 255, 136, 0.1);
+}
+
+.graph-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Annotations */
+.annotation {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.annotation-off {
+    bottom: 25%;
+    left: 20%;
+    /* Position over flat line area */
+}
+
+.annotation-on {
+    top: 35%;
+    right: 25%;
+    /* Position over spike area */
+    border-color: var(--neon-green);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot-red {
+    background-color: #ff4444;
+    box-shadow: 0 0 8px #ff4444;
+}
+
+.dot-green {
+    background-color: var(--neon-green);
+    box-shadow: 0 0 8px var(--neon-green);
+}
+
+.graph-overlay {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: auto;
+}
+
+.stat-box {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--neon-green);
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+
+.stat-trend {
+    color: var(--neon-green);
+    font-weight: 700;
+    direction: ltr;
+    display: inline-block;
+}
+
+.detail-item {
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.detail-item h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+    .graph-card {
+        grid-template-columns: 1fr;
+    }
+}
