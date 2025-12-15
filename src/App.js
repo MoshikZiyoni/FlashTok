@@ -24,7 +24,6 @@ function App() {
       <GraphSection />
       <InfoSection />
       <HowItWorks />
-      <GraphSection />
       <Testimonials />
       <Pricing onOpenModal={openModal} />
       <FAQ />
