@@ -27,7 +27,7 @@ const Pricing = ({ onOpenModal }) => {
         <section className="pricing-section">
             <div className="container">
                 <div className="pricing-header">
-                    <h2>בחרו את <span className="gradient-text">קצב הצמיחה</span> שלכם</h2>
+                    <h2>חבילות <span className="gradient-text">תנועה לאתר</span></h2>
                     <p>מסלולים גמישים לקידום אורגני אמיתי.</p>
                 </div>
 

@@ -8,8 +8,8 @@ const Hero = ({ onOpenModal }) => {
             <div className="hero-overlay"></div>
             <div className="container hero-content">
                 <h1 className="hero-title">
-                    <span className="gradient-text">1# בקידום אורגני</span><br />
-                    וכניסות מובטחות לאתר
+                    <span className="gradient-text">תנועה אורגנית אמיתית</span><br />
+                    שתקפיץ את האתר שלך
                 </h1>
                 <p className="hero-subtitle">
                     שלטו בתוצאות החיפוש בגוגל עם תנועה אורגנית איכותית של <span className="highlight">RankUp</span>.

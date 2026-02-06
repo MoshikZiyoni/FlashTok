@@ -72,5 +72,19 @@ button {
   background: linear-gradient(to left, var(--neon-green), var(--neon-blue));
   /* Reversed gradient for RTL */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-padding-top: 80px;
+  /* Offset for sticky navbar */
+  scroll-behavior: smooth;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  margin: 0 auto;
+  width: 80%;
 }
