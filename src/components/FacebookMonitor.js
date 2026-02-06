@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRobot, FaSearch, FaUserSecret, FaBolt, FaCheck } from 'react-icons/fa';
 import './FacebookMonitor.css';
-import dashboardImg from '../assets/fb_monitor_dashboard.png';
+import dashboardImg from '../assets/fb_dashboard_example.png';
 
 const FacebookMonitor = ({ onOpenModal }) => {
     return (
